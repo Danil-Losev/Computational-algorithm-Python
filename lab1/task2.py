@@ -20,7 +20,7 @@ Dd = 0.002
 dd  = Dd / abs(d)
 
 x = ( ( m ** 3 ) * (a + b) ) / (c + d)
-dx = ( (3 * dm) + ( (a * da + b * db) / (a + b)  ) ) / ( ( c * dc + d * dd ) / ( d + c) )
+dx = ( (3 * dm) + ( (a * da + b * db) / (a + b)  ) ) + ( ( c * dc + d * dd ) / ( d + c) )
 Dx = dx * abs(x)
 
 print(f"X = {x}, Dx = {Dx}, dx = {dx}")
